@@ -41,11 +41,11 @@ El proyecto integra Bootstrap para una interfaz responsiva y moderna, compatible
 
 ### Autores
 
-Gabriela Alvarado Rosales
-Felipe Droguett Ortiz
-Rodrigo Villaroel Ugalde
+-Gabriela Alvarado Rosales
+-Felipe Droguett Ortiz
+-Rodrigo Villaroel Ugalde
 
-Desarrolladores Fullstack en formación
+-Desarrolladores Fullstack en formación
 
 ---
 
