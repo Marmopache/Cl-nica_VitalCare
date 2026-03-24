@@ -37,6 +37,19 @@ El proyecto integra Bootstrap para una interfaz responsiva y moderna, compatible
 - Listado, modificación y eliminación de pacientes, doctores y horas médicas.
 - Autenticación de usuarios para garantizar seguridad en el acceso.
 
+---
+
+### Autor
+
+Gabriela Alvarado Rosales
+Desarrolladora Front-End en formación
+
+---
+
+### Nota
+
+Proyecto desarrollado con fines académicos como parte del aprendizaje en desarrollo web Front-End.
+
 ### Panel de Administración
 
 - Gestión completa de las tablas de la base de datos.
