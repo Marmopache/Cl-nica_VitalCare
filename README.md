@@ -4,7 +4,6 @@
 [![Django](https://img.shields.io/badge/Django-6.0-green)](https://www.djangoproject.com/)
 [![PostgreSQL](https://img.shields.io/badge/PostgreSQL-14-blue)](https://www.postgresql.org/)
 [![Bootstrap](https://img.shields.io/badge/Bootstrap-5-purple)](https://getbootstrap.com/)
-[![License](https://img.shields.io/badge/License-MIT-yellow)](LICENSE)
 
 ## Descripción del Proyecto
 
