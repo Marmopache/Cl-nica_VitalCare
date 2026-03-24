@@ -1,0 +1,77 @@
+:root {
+    --purple: #8d58f0;
+}
+
+/* Navbar personalizado */
+.navbar.bg-primary {
+    background-color: var(--purple) !important;
+}
+
+/* Botones principales */
+.btn-primary {
+    background-color: var(--purple) !important;
+    border-color: var(--purple) !important;
+}
+
+.btn-primary:hover {
+    background-color: var(--purple) !important;
+    border-color: var(--purple) !important;
+}
+
+/* Botones outline-light (ejemplo de logout) */
+.btn-outline-light {
+    color: #fff !important; /* texto blanco */
+    border-color: #fff !important; /* borde blanco */
+}
+
+.btn-outline-light:hover {
+    background-color: var(--purple) !important; /* tu purple */
+    color: #fff !important; /* texto blanco */
+    border-color: var(--purple) !important;
+}
+
+/* Pacientes: celeste pastel */
+.btn-pacientes {
+    background-color: #a2d2ff;
+    border-color: #a2d2ff;
+    color: #000;
+}
+
+.btn-pacientes:hover,
+.btn-pacientes:focus {
+    background-color: #7fbfff; /* un poco más oscuro */
+    border-color: #7fbfff;
+    color: #000;
+}
+
+/* Doctores: verde claro */
+.btn-doctores {
+    background-color: #b7e4c7;
+    border-color: #b7e4c7;
+    color: #000;
+}
+
+.btn-doctores:hover,
+.btn-doctores:focus {
+    background-color: #93d9a7;
+    border-color: #93d9a7;
+    color: #000;
+}
+
+/* Horas: lila suave */
+.btn-horas {
+    background-color: #d6b8ff;
+    border-color: #d6b8ff;
+    color: #000;
+}
+
+.btn-horas:hover,
+.btn-horas:focus {
+    background-color: #c19cff;
+    border-color: #c19cff;
+    color: #000;
+}
+
+.icon-purple-dark {
+    color: #592bad !important;
+}

@@ -1,0 +1,10 @@
+{% extends "base.html" %}
+{% block content %}
+<h3>{{ form.instance.id|yesno:"Editar Paciente,Nuevo Paciente" }}</h3>
+<form method="POST">
+    {% csrf_token %}
+    {{ form.as_p }}
+    <button type="submit" class="btn btn-primary">Guardar</button>
+    <a href="{% url 'paciente_list' %}" class="btn btn-secondary">Cancelar</a>
+</form>
+{% endblock %}

@@ -1,0 +1,32 @@
+{% extends "base.html" %}
+{% block content %}
+<h3>Horas Médicas</h3>
+<a href="{% url 'hora_create' %}" class="btn btn-primary mb-3">Nueva Hora</a>
+<table class="table table-striped">
+    <thead class="table-dark">
+        <tr>
+            <th>Paciente</th>
+            <th>Doctor</th>
+            <th>Fecha</th>
+            <th>Hora</th>
+            <th>Motivo</th>
+            <th>Acciones</th>
+        </tr>
+    </thead>
+    <tbody>
+        {% for hora in horas %}
+        <tr>
+            <td>{{ hora.paciente.nombre }} {{ hora.paciente.apellido }}</td>
+            <td>{{ hora.doctor.nombre }} {{ hora.doctor.apellido }}</td>
+            <td>{{ hora.fecha }}</td>
+            <td>{{ hora.hora }}</td>
+            <td>{{ hora.motivo }}</td>
+            <td>
+                <a href="{% url 'hora_update' hora.id %}" class="btn btn-warning btn-sm">Editar</a>
+                <a href="{% url 'hora_delete' hora.id %}" class="btn btn-danger btn-sm">Eliminar</a>
+            </td>
+        </tr>
+        {% endfor %}
+    </tbody>
+</table>
+{% endblock %}

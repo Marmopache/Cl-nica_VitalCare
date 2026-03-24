@@ -1,0 +1,35 @@
+{% extends "base.html" %}
+{% block content %}
+<h3>Doctores</h3>
+<a href="{% url 'doctor_create' %}" class="btn btn-primary mb-3">Nuevo Doctor</a>
+<table class="table table-striped">
+    <thead class="table-dark">
+        <tr>
+            <th>Nombre</th>
+            <th>Apellido Paterno</th>
+            <th>Apellido Materno</th>
+            <th>Acciones</th>
+            <th>Edad</th>
+            <th>Fecha Nacimiento</th>
+            <th>Especialidad</th>
+
+        </tr>
+    </thead>
+    <tbody>
+        {% for doctor in doctores %}
+        <tr>
+            <td>{{ doctor.nombre }}</td>
+            <td>{{ doctor.apellido_paterno }}</td>
+            <td>{{ doctor.apellido_materno }}</td>
+            <td>{{ doctor.edad }}</td>
+            <td>{{ doctor.fecha_nacimiento }}</td>
+            <td>{{ doctor.especialidad }}</td>
+            <td>
+                <a href="{% url 'doctor_update' doctor.id %}" class="btn btn-warning btn-sm">Editar</a>
+                <a href="{% url 'doctor_delete' doctor.id %}" class="btn btn-danger btn-sm">Eliminar</a>
+            </td>
+        </tr>
+        {% endfor %}
+    </tbody>
+</table>
+{% endblock %}
