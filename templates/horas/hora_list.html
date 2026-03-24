@@ -16,8 +16,8 @@
     <tbody>
         {% for hora in horas %}
         <tr>
-            <td>{{ hora.paciente.nombre }} {{ hora.paciente.apellido }}</td>
-            <td>{{ hora.doctor.nombre }} {{ hora.doctor.apellido }}</td>
+            <td>{{ hora.paciente.nombre }} {{ hora.paciente.apellido_paterno }} {{ hora.paciente.apellido_materno }}</td>
+            <td>{{ hora.doctor.nombre }} {{ hora.doctor.apellido_paterno }} {{ hora.doctor.apellido_materno }}</td>
             <td>{{ hora.fecha }}</td>
             <td>{{ hora.hora }}</td>
             <td>{{ hora.motivo }}</td>

@@ -9,6 +9,7 @@ def calcular_edad(self):
             edad -= 1
         return edad
 
+
 # --------------------
 # PACIENTES
 # --------------------
@@ -18,6 +19,8 @@ class Paciente(models.Model):
     apellido_materno = models.CharField(max_length=50, blank=False, null=False)
     fecha_nacimiento = models.DateField(blank=False, null=False)
     edad = property(calcular_edad) 
+    def __str__(self):
+        return f"{self.nombre} {self.apellido_paterno} {self.apellido_materno}"
 # --------------------
 # DOCTORES
 # --------------------
@@ -28,19 +31,9 @@ class Doctor(models.Model):
     fecha_nacimiento = models.DateField()
     edad = property(calcular_edad) 
     especialidad = models.CharField(max_length=50)  # <-- agregado
-
-    def calcular_edad(self):
-        hoy = date.today()
-        edad = hoy.year - self.fecha_nacimiento.year
-
-        # Ajuste si aún no cumple años este año
-        if (hoy.month, hoy.day) < (self.fecha_nacimiento.month, self.fecha_nacimiento.day):
-            edad -= 1
-
-        return edad
-
     def __str__(self):
-        return f"{self.nombre} {self.apellido_paterno} {self.apellido_materno} - {self.especialidad}"  # <-- opcional mostrar especialidad
+        return f"{self.nombre} {self.apellido_paterno} {self.apellido_materno}"   
+
 
 
 # --------------------
