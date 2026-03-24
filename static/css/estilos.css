@@ -75,3 +75,22 @@
 .icon-purple-dark {
     color: #592bad !important;
 }
+
+html, body {
+    height: 100%;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+}
+
+.container.pb-5 {
+    flex: 1;
+}
+footer.footer {
+    background-color: var(--purple) !important;
+    color: white !important;
+    text-align: center;
+    padding: 1rem;
+}
