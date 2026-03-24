@@ -3,7 +3,7 @@
 <h3>Doctores</h3>
 <a href="{% url 'doctor_create' %}" class="btn btn-doctores mb-3">Nuevo Doctor</a>
 <table class="table table-striped">
-    <thead class="table-dark">
+    <thead class="table-doctores">
         <tr>
             <th>Nombre</th>
             <th>Apellido Paterno</th>
@@ -25,7 +25,7 @@
             <td>{{ doctor.edad }}</td>
             <td>{{ doctor.especialidad }}</td>
             <td>
-                <a href="{% url 'doctor_update' doctor.id %}" class="btn btn-warning btn-sm">Editar</a>
+                <a href="{% url 'doctor_update' doctor.id %}" class="btn btn-editardoc btn-sm">Editar</a>
                 <a href="{% url 'doctor_delete' doctor.id %}" class="btn btn-danger btn-sm">Eliminar</a>
             </td>
         </tr>

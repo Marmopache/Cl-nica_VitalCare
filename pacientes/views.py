@@ -48,11 +48,12 @@ class PacienteUpdateView(LoginRequiredMixin, UpdateView):
 
 class PacienteDeleteView(LoginRequiredMixin, DeleteView):
     model = Paciente
+    template_name = 'pacientes/paciente_confirm_delete.html'
     success_url = reverse_lazy('paciente_list')
 
-    def form_valid(self, form):
+    def delete(self, request, *args, **kwargs):
         messages.success(self.request, "Paciente eliminado correctamente.")
-        return super().form_valid(form)
+        return super().delete(request, *args, **kwargs)
     
 # =========================
 # DOCTORES
@@ -87,11 +88,12 @@ class DoctorUpdateView(LoginRequiredMixin, UpdateView):
 
 class DoctorDeleteView(LoginRequiredMixin, DeleteView):
     model = Doctor
+    template_name = 'doctores/doctor_confirm_delete.html'
     success_url = reverse_lazy('doctor_list')
 
-    def form_valid(self, form):
+    def delete(self, request, *args, **kwargs):
         messages.success(self.request, "Doctor eliminado correctamente.")
-        return super().form_valid(form)
+        return super().delete(request, *args, **kwargs)
     
 # =========================
 # HORAS MÉDICAS
@@ -126,8 +128,9 @@ class HoraMedicaUpdateView(LoginRequiredMixin, UpdateView):
 
 class HoraMedicaDeleteView(LoginRequiredMixin, DeleteView):
     model = HoraMedica
+    template_name = 'horas/hora_confirm_delete.html'
     success_url = reverse_lazy('hora_list')
 
-    def form_valid(self, form):
+    def delete(self, request, *args, **kwargs):
         messages.success(self.request, "Hora médica eliminada.")
-        return super().form_valid(form)
+        return super().delete(request, *args, **kwargs)

@@ -1,5 +1,9 @@
 :root {
-    --purple: #8d58f0;
+    --purple: #a379f3;
+}
+
+h3 {
+    color: #2b007c;
 }
 
 /* Navbar personalizado */
@@ -18,15 +22,15 @@
     border-color: var(--purple) !important;
 }
 
-/* Botones outline-light (ejemplo de logout) */
+/* Botones outline-light */
 .btn-outline-light {
-    color: #fff !important; /* texto blanco */
-    border-color: #fff !important; /* borde blanco */
+    color: #fff !important;
+    border-color: #fff !important;
 }
 
 .btn-outline-light:hover {
-    background-color: var(--purple) !important; /* tu purple */
-    color: #fff !important; /* texto blanco */
+    background-color: var(--purple) !important;
+    color: #fff !important; 
     border-color: var(--purple) !important;
 }
 
@@ -39,15 +43,28 @@
 
 .btn-pacientes:hover,
 .btn-pacientes:focus {
-    background-color: #7fbfff; /* un poco más oscuro */
+    background-color: #7fbfff;
     border-color: #7fbfff;
+    color: #000;
+}
+
+.btn-editarpac {
+    background-color: #9fc1d8;
+    border-color: #9fc1d8;
+    color: #000;
+}
+
+.btn-editarpac:hover,
+.btn-editarpac:focus {
+    background-color: #749bb4;
+    border-color: #749bb4;
     color: #000;
 }
 
 /* Doctores: verde claro */
 .btn-doctores {
-    background-color: #b7e4c7;
-    border-color: #b7e4c7;
+    background-color: #a1f0be;
+    border-color: #a1f0be;
     color: #000;
 }
 
@@ -58,9 +75,22 @@
     color: #000;
 }
 
+.btn-editardoc {
+    background-color: #b4dfc6;
+    border-color: #b4dfc6;
+    color: #000;
+}
+
+.btn-editardoc:hover,
+.btn-editardoc:focus {
+    background-color: #88be9f;
+    border-color: #88be9f;
+    color: #000;
+}
+
 /* Horas: lila suave */
 .btn-horas {
-    background-color: #d6b8ff;
+    background-color: #cdaaff;
     border-color: #d6b8ff;
     color: #000;
 }
@@ -71,6 +101,20 @@
     border-color: #c19cff;
     color: #000;
 }
+
+.btn-editarhora {
+    background-color: #c4b4e0;
+    border-color: #c4b4e0;
+    color: #000;
+}
+
+.btn-editarhora:hover,
+.btn-editarhora:focus {
+    background-color: #9786b4;
+    border-color: #9786b4;
+    color: #000;
+}
+
 
 .icon-purple-dark {
     color: #592bad !important;
@@ -93,4 +137,19 @@ footer.footer {
     color: white !important;
     text-align: center;
     padding: 1rem;
+}
+
+.table-pacientes th {
+    background-color: #184d80 !important; 
+    color: white !important;              
+}
+
+.table-doctores th {
+    background-color: #176131 !important; 
+    color: white !important;             
+}
+
+.table-horas th {
+    background-color: #5e2ba7 !important; 
+    color: white !important;              
 }

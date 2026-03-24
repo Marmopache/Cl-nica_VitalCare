@@ -28,3 +28,6 @@ urlpatterns = [
     path('horas/editar/<int:pk>/', views.HoraMedicaUpdateView.as_view(), name='hora_update'),
     path('horas/eliminar/<int:pk>/', views.HoraMedicaDeleteView.as_view(), name='hora_delete'),
 ]
+
+
+
