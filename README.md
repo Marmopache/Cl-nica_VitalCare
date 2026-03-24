@@ -4,7 +4,6 @@
 [![Django](https://img.shields.io/badge/Django-6.0-green)](https://www.djangoproject.com/)
 [![PostgreSQL](https://img.shields.io/badge/PostgreSQL-14-blue)](https://www.postgresql.org/)
 [![Bootstrap](https://img.shields.io/badge/Bootstrap-5-purple)](https://getbootstrap.com/)
-[![License](https://img.shields.io/badge/License-MIT-yellow)](LICENSE)
 
 ## Descripción del Proyecto
 
@@ -37,6 +36,22 @@ El proyecto integra Bootstrap para una interfaz responsiva y moderna, compatible
 - Registro de Horas Médicas: asignación de hora, doctor, paciente, fecha y motivo.
 - Listado, modificación y eliminación de pacientes, doctores y horas médicas.
 - Autenticación de usuarios para garantizar seguridad en el acceso.
+
+---
+
+### Autores
+
+- Gabriela Alvarado Rosales
+- Felipe Droguett Ortiz
+- Rodrigo Villaroel Ugalde
+
+Desarrolladores Fullstack en formación
+
+---
+
+### Nota
+
+Proyecto desarrollado con fines académicos como parte del aprendizaje en desarrollo web Front-End.
 
 ### Panel de Administración
 
