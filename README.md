@@ -45,7 +45,7 @@ El proyecto integra Bootstrap para una interfaz responsiva y moderna, compatible
 - Felipe Droguett Ortiz
 - Rodrigo Villaroel Ugalde
 
--Desarrolladores Fullstack en formación
+Desarrolladores Fullstack en formación
 
 ---
 
