@@ -8,10 +8,10 @@
             <th>Nombre</th>
             <th>Apellido Paterno</th>
             <th>Apellido Materno</th>
-            <th>Acciones</th>
-            <th>Edad</th>
             <th>Fecha Nacimiento</th>
+            <th>Edad</th>
             <th>Especialidad</th>
+            <th>Acciones</th>
 
         </tr>
     </thead>
@@ -21,8 +21,8 @@
             <td>{{ doctor.nombre }}</td>
             <td>{{ doctor.apellido_paterno }}</td>
             <td>{{ doctor.apellido_materno }}</td>
-            <td>{{ doctor.edad }}</td>
             <td>{{ doctor.fecha_nacimiento }}</td>
+            <td>{{ doctor.edad }}</td>
             <td>{{ doctor.especialidad }}</td>
             <td>
                 <a href="{% url 'doctor_update' doctor.id %}" class="btn btn-warning btn-sm">Editar</a>
